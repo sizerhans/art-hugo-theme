@@ -7,15 +7,15 @@
             <a href={{absURL .Params.Url}} style="text-decoration: none;">
                 <div class="card text imagebox" style="border: none;">
                     {{ with resources.GetMatch .Params.Thumbnail}}
-                        <img src="{{.Permalink}}" class="img" alt="{{.Title}}">
+                        <img src="{{.Permalink}}" class="img" alt="f">
                     {{end}}
                     <p class="caption"> {{.Params.ListTitle}} </p>
                 </div>
             </a>
         </div>
-        {{end }}
         {{ end }}
-        {{end }}
+        {{ end }}
+        {{ end }}
         
     </div>
 {{ end }}
