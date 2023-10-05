@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if ne .Title "About"}}
-  <div class="row" id="postcard" style="background-color: #adad85;">
+  <div class="row" id="postcard" style="background-color: #e8e8e8;">
     <div class="col-4 text-center">
       <div class="row" id="postcardtext">
         <h1>{{ .Params.Title }}</h1>
@@ -23,7 +23,16 @@
 </div>
 {{ end }}
 {{ if eq .Title "About"}}
-  {{.Content}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-7">
+        {{.Content}}
+      </div>
+    <aside class="col-md-5">
+      DDDD
+    </aside>
+    </div>
+  </div>
 {{ end }}
 {{ end }}
     
