@@ -5,10 +5,9 @@ body {
 
 #logo { /* Isabella Tessier Logo*/
   font-size: 22px;
-  font-style: italic;
 }
 
-#nav-links {
+#nav-links { /*Navigation bar text*/
   font-size: 18px;
 }
 
