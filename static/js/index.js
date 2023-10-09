@@ -1,4 +1,16 @@
-let slideIndex = 1;
+
+var $container = $('#postContainer').masonry({
+  columnWidth: '33%',
+  itemSelector: '#postContent',
+  percentPosition: true
+}
+);
+
+$container.imagesLoaded().progress( function () {
+  $container.masonry('layout');
+});
+
+/*let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -26,3 +38,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+*/
