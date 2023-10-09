@@ -1,5 +1,4 @@
 {{ define "main" }}
-<div class="container-fluid">
     <div class="row" data-masonry='{"percentPosition": true }' style="min-height: 60%;">
         {{ range .Site.RegularPages.ByDate | first 6  }}
         {{ if ne .Title "About"}}
@@ -18,5 +17,4 @@
         {{ end }}
         {{ end }}
     </div>
-</div>
 {{ end }}
