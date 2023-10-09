@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <div class="row" id="postContainer" data-masonry='{"percentPosition": true }' style="min-height: 60%;">
+    <div class="row" id="postContainer" >
         {{ range .Site.RegularPages.ByDate | first 6  }}
         {{ if ne .Title "About"}}
         {{ if ne .Title "Isabella Tessier"}}

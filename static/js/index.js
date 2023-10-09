@@ -1,13 +1,14 @@
 
-var $container = $('#postContainer').masonry({
-  columnWidth: '33%',
-  itemSelector: '#postContent',
-  percentPosition: true
-}
-);
+var $container = $('#postContainer').imagesLoaded( function() {
 
-$container.imagesLoaded().progress( function () {
-  $container.masonry('layout');
+  // init Masonry after all images have loaded
+  $container.masonry({
+    itemSelector: '#postContent',
+    percentPosition: true,
+    
+
+  });
+  console.log("looged")
 });
 
 /*let slideIndex = 1;

@@ -1,5 +1,5 @@
 {{ define "main"}}
-    <div class="row" id="postContainer" data-masonry='{"percentPosition": true }'>
+    <div class="row" id="postContainer">
     {{ range .Pages }}
         <div class="col-sm-12 col-md-6 col-lg-4" id="postContent">
             <a href={{absURL .Params.Url}} style="text-decoration: none;">
