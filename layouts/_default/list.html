@@ -4,8 +4,9 @@
         <div class="col-sm-12 col-md-6 col-lg-4" id="postContent">
             <a href={{absURL .Params.Url}} style="text-decoration: none;">
                 <div class="card text imagebox box-masonry" style="border: none;">
+                    {{ $altText := .Params.Description}}
                     {{ with resources.GetMatch .Params.Thumbnail}}
-                        <img src="{{.Permalink}}" class="img box-masonry-image" alt="">
+                        <img src="{{.Permalink}}" class="img box-masonry-image" alt="{{$altText}}">
                     {{end}}
                     <p class="caption"> {{.Params.ListTitle}} </p>
                 </div>

@@ -45,13 +45,20 @@ body {
   text-align: center;
 }
 
-
 .caption { 
   text-align: center;
   outline: none;
 }
 
+ h4 {
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+}
 
+#postContainer { 
+  
+}
 
 
 
