@@ -12,21 +12,19 @@
 <body>
     
     <!--All pages will inherit the navbar-->
-    <div class="container-fluid">
+    
+    
     {{ partial "partials/navbar.html" .}}
-
+    <main>
     <!--The main block is where pages will deviate-->
     {{ block "main" . }}
 
     {{ end }}
+    </main>
     <!--All pages will inherit the footer-->
     <!--{{ partial "partials/footer.html" . }}-->
-    {{ block "footer" . }}
-
-    {{ end }}
-
-    </div>
-        
+    {{ partial "partials/footer.html" . }}
+</main>        
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

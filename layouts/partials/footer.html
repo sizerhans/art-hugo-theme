@@ -1,70 +1,23 @@
+<footer class="text-center text-lg-start bg-white text-muted">
 
-
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
-    <!-- Grid container -->
-    <div class="container pt-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <!-- Github -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    <div style="padding-top: 6px; padding-bottom: 14px;">
+      {{ $url := .Site.Params.instagram}}
+      <a href="{{$url}}" class="me-4 link-secondary">
+        {{ with resources.GetMatch "images/icons/camera_instagram_social media_instagram logo_icon.svg"}}
+          <img src="{{.Permalink}}" width="40" class="social-icons" alt="Instagram Icon">
+        {{end}}
+      </a>
+      {{ $url := .Site.Params.linkedin }}
+      <a href="{{$url}}" class="me-4 link-secondary">
+        {{ with resources.GetMatch "images/icons/linkedin_network_social network_linkedin logo_icon.svg"}}
+          <img src="{{.Permalink}}" width="40"  class="social-icons" alt="Linkedin Icon">
+        {{end}}
+      </a>
     </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    </div>
-    <!-- Copyright -->
-  </footer>
-    
+    © 2023 - Isabella Tessier:
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->

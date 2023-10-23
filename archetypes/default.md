@@ -8,6 +8,13 @@ Description: Post Description #Description of the post
 Thumbnail: images/ #append link to image that will be shown on the list page
 Coverimage: images/ #the image that will be displayed at the top of the post
 Featured: False # If True, Post will be featured on home page
-Tags: ["Biennale","Drawings from performance"] #tags allow related content to be grouped together, add more by adding a comma to the latest tag
+Tags: ["Featured","Prints for sale"] #tags currently control which posts are featured and what prints are available to buy, add more by adding a comma to the latest tag
 ---
+
+<!----
+    Guide for basic text formatting if needed (italics, headings etc): https://www.markdownguide.org/basic-syntax/
+
+    ![This is where the alt text goes (image description)](https://isabellatessier.co.uk/images/exhibitions/venice%20biennale/exhibition%20and%20talk/2-Cover-image.jpg <- link to the image)
+    This is where to put the caption for the image
+>
 

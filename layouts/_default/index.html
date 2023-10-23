@@ -20,7 +20,7 @@
     </div>
     <h4>Prints for Sale</h4>
     <div class="row" id="postContainer">
-        {{ $prints := where .Site.RegularPages "Params.tags" "intersect" (slice "Prints") }}
+        {{ $prints := where .Site.RegularPages "Params.tags" "intersect" (slice "Prints for sale") }}
         {{ range $prints | first 6}}
         <div class="col-sm-12 col-md-6 col-lg-4" id="postContent">
             

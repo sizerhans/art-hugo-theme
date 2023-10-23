@@ -4,11 +4,25 @@ body {
 }
 
 #logo { /* Isabella Tessier Logo*/
-  font-size: 22px;
+  font-size: 36px;
 }
 
 #nav-links { /*Navigation bar text*/
   font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  
 }
 
 .img {
@@ -35,14 +49,17 @@ body {
   font-size: 14px;
 }
 
-#content img {
+#content p img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #content p {
   max-width: 100%;
   overflow-wrap: break-word;
-  text-align: center;
+  text-align: left;
 }
 
 .caption { 
@@ -59,6 +76,8 @@ body {
 #postContainer { 
   
 }
+
+
 
 
 
