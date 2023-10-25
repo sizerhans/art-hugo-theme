@@ -1,7 +1,7 @@
 {{ define "main"}}
-    <div class="row" id="postContainer">
+    <div class="row postContainer">
     {{ range .Pages }}
-        <div class="col-sm-12 col-md-6 col-lg-4" id="postContent">
+        <div class="col-sm-12 col-md-6 col-lg-4 gridcol" id="postContent">
             <a href={{absURL .Params.Url}} style="text-decoration: none;">
                 <div class="card text imagebox box-masonry" style="border: none;">
                     {{ $altText := .Params.Description}}

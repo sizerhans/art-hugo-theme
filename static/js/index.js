@@ -1,12 +1,10 @@
 
-var $container = $('#postContainer').imagesLoaded( function() {
+var $container = $('.postContainer').imagesLoaded( function() {
 
   // init Masonry after all images have loaded
   $container.masonry({
     itemSelector: '#postContent',
     percentPosition: true,
-    
-
   });
   console.log("looged")
 });
