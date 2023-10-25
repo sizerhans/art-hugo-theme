@@ -1,30 +1,30 @@
 {{ define "main" }}
 {{ if ne .Title "About"}}
-  <div class="row" id="postcard" style="background-color: #e8e8e8;">
-    <div class="col-4 text-center">
-      <div class="row" id="postcardtext">
-        <h1>{{ .Params.Title }}</h1>
-        <h6>{{ .Params.Description}}</h6>
-      </div>
-    </div>
-    <div class="col-8 text-center" id="postcard">
-      {{ with resources.GetMatch .Params.Coverimage}}
-        <img src="{{.Permalink}}" class="img" alt="news">
-      {{end}}
-    </div>
+  
+<div class="row justify-content-center" id="postcard" style="background-color: #e8e8e8; max-width: 100%;">
+  <div class="col-sm 12 col-md-8 col-lg-8" id="postcard">
+    {{ with resources.GetMatch .Params.Coverimage}}
+      <img src="{{.Permalink}}" class="img" alt="news">
+    {{end}}
   </div>
-  <div class="row justify-content-center">
-    <div class="col-sm 12 col-md-7 col-lg-7" id="content">
-      <br>
-      {{.Content}}
-    </div>
-    <!--{{ partial "partials/related.html" . }}-->
+  <div class="col-sm 12 col-md-4 col-lg-4 text-center">
+      <h1>{{ .Params.Title }}</h1>
+      <h6>{{ .Params.Description}}</h6>
   </div>
 </div>
+<div class="row justify-content-center" style="max-width: 100%;">
+  <div class="col-sm 12 col-md-7 col-lg-7" id="content" >
+    <br>
+    {{.Content}}
+  </div>
+    <!--{{ partial "partials/related.html" . }}-->
+</div>
+
+
 {{ end }}
 {{ if eq .Title "About"}}
   <div class="container-fluid">
-    <div class="row justify-content-center" id="content">
+    <div class="row justify-content-center" id="content" style="max-width: 100%">
       <div class="col-sm 12 col-md-7 col-lg-7">
         {{.Content}}
       </div>
