@@ -1,5 +1,5 @@
 {{ define "main" }}
-    <h4><b>Featured Posts</b></h4>
+    <h4><b>Featured Post</b></h4>
     <div class="row postContainerHome">
          
         {{ $featuredPosts := where .Site.RegularPages "Params.tags" "intersect" (slice "Featured") }}    
