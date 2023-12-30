@@ -5,7 +5,7 @@ FeaturedTitle: #the text that is displayed if the post is on the featured slot
 Date: {{ .Date }} #how posts are ordered 
 Url: / #this should be the category of the post and then the file name e.g. /print/printfilename
 Draft: True # change to false when you want to post
-Description: Post Description #Description of the post
+Description: Post Description #Ca[tion for main image and description for alt images
 Thumbnail: images/ #append link to image that will be shown on the list page
 Coverimage: images/ #the image that will be displayed at the top of the post
 Tags: ["Featured","Prints for sale"] #tags currently control which posts are featured and what prints are available to buy, add more by adding a comma to the latest tag
