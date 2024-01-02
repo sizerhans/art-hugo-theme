@@ -89,6 +89,12 @@ main {
   outline: none;
 }
 
+#pageNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Featuredcaption { 
   text-align: center;
   outline: none;
