@@ -15,7 +15,7 @@
     {{end}}
     </div>
     <div id="pageNav">
-        {{  template "_internal/pagination.html" . }} <!-- customise the amount of posts on a page through paginate: x in config file -->
+        {{  partial "partials/pagenav.html" . }} <!-- customise the amount of posts on a page through paginate: x in config file -->
     </div>
     
 {{ end }}
