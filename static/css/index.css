@@ -5,6 +5,27 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+ @font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: Roboto-Bold;
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: Roboto-Italic;
+  src: url('../fonts/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: italic;
+  font-style: normal;
+ }
+
 
 .pagination {
   --bs-pagination-padding-x: 0.75rem;
@@ -46,8 +67,15 @@
 
 
 body {
-  font-family:  	'HelveticaNeue Thin', 'HelveticaNeue', 'Helvetica'
-  Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+strong, b {
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+em, i {
+  font-family: 'Roboto-Italic', sans-serif;
 }
 
 #logo { /* Isabella Tessier Logo*/
