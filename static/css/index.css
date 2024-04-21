@@ -140,6 +140,44 @@ main {
   font-size: 14px;
 }
 
+]aboutPage h1 {
+  text-align: left;
+  padding: 0;
+  font-size: 2em;
+}
+
+#aboutPage h2 {
+  text-align: left;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+#aboutPage h3 {
+  text-align: left;
+  padding: 0;
+  font-size: 1.17em;
+}
+
+#aboutPage h4 {
+  text-align: left;
+  padding: 0;
+  font-size: 1em;
+}
+
+#aboutPage h5 {
+  text-align: left;
+  padding: 0;
+  font-size: 0.83em;
+}
+
+#aboutPage h6 {
+  text-align: left;
+  padding: 0;
+  font-size: 0.67em;
+}
+
+
+
 #content {
   /*padding-left: 2px;*/
 }
