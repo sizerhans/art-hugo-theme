@@ -178,7 +178,7 @@ main {
 
 #content p {
   font-size: 16px; 
-  font-size: 1em;
+  font-size: 1.2em; /* Changes font size depending on what size P tags inherit and the number acts as a multiplier*/
 }
 
 #content {
